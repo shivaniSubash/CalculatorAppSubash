@@ -7,46 +7,34 @@
     android:background="@color/md_theme_light_errorContainer"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextOperation"
-        android:layout_width="68dp"
-        android:layout_height="53dp"
-        android:background="@color/md_theme_dark_onPrimary"
-        android:backgroundTint="@color/md_theme_light_inversePrimary"
-        android:ems="10"
-        android:inputType="text"
-        android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberInputBox"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumberInputBox2"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberOutputBox"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.634" />
 
     <EditText
-        android:id="@+id/editTextNumberOutputBox"
-        android:layout_width="118dp"
-        android:layout_height="106dp"
+        android:id="@+id/editTextNumberInputBox"
+        android:padding="@dimen/textView_padding"
+        android:layout_width="175dp"
+        android:layout_height="97dp"
         android:background="@color/md_theme_light_inversePrimary"
         android:backgroundTint="@color/md_theme_light_inversePrimary"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="@string/input_textBox1"
+        android:hint="@string/input_textBox1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.089" />
 
     <EditText
-        android:id="@+id/editTextNumberInputBox"
+        android:id="@+id/editTextNumberOutputBox"
+        android:padding="@dimen/textView_padding"
         android:layout_width="375dp"
         android:layout_height="87dp"
         android:background="@color/md_theme_light_inversePrimary"
         android:backgroundTint="@color/md_theme_light_inversePrimary"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="@string/output_textBox"
+        android:hint="@string/output_textBox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,16 +43,17 @@
 
     <EditText
         android:id="@+id/editTextNumberInputBox2"
-        android:layout_width="118dp"
-        android:layout_height="106dp"
+        android:layout_width="201dp"
+        android:layout_height="95dp"
         android:background="@color/md_theme_light_inversePrimary"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="@string/input_textBox2"
+        android:padding="@dimen/textView_padding"
+        android:hint="@string/input_textBox2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberOutputBox"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberInputBox"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.089" />
 
