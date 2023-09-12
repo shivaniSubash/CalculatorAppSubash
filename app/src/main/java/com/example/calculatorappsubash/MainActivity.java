@@ -16,123 +16,117 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         findViewById(R.id.editTextNumberInputBox).requestFocus(1);
     }
-    public void mult(View v){
+    public void mult(){
         EditText num1ET = findViewById(R.id.editTextNumberInputBox);
         String strNum1 = num1ET.getText().toString();
-        int num1= Integer.valueOf(strNum1);
+        double num1= Double.valueOf(strNum1);
 
         EditText num2ET = findViewById(R.id.editTextNumberInputBox2);
         String strNum2 = num2ET.getText().toString();
-        int num2 = Integer.valueOf(strNum2);
+        double num2 = Double.valueOf(strNum2);
         TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
 
-        int output= num1*num2;
+        double output= num1*num2;
 
         outputBox.setText(String.valueOf(output));
 
     }
-    public void sub(View v){
+    public void sub(){
         EditText num1ET = findViewById(R.id.editTextNumberInputBox);
         String strNum1 = num1ET.getText().toString();
-        int num1= Integer.valueOf(strNum1);
+        double num1= Double.valueOf(strNum1);
 
         EditText num2ET = findViewById(R.id.editTextNumberInputBox2);
         String strNum2 = num2ET.getText().toString();
-        int num2 = Integer.valueOf(strNum2);
+        double num2 = Double.valueOf(strNum2);
         TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
 
-        int output = num1-num2;
+        double output = num1-num2;
 
         outputBox.setText(String.valueOf(output));
     }
     public void add(){
         EditText num1ET = findViewById(R.id.editTextNumberInputBox);
         String strNum1 = num1ET.getText().toString();
-        int num1= Integer.valueOf(strNum1);
+        double num1= Double.valueOf(strNum1);
 
         EditText num2ET = findViewById(R.id.editTextNumberInputBox2);
         String strNum2 = num2ET.getText().toString();
-        int num2 = Integer.valueOf(strNum2);
+        double num2 = Double.valueOf(strNum2);
         TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
 
-        int output = num1+num2;
+        double output = num1+num2;
 
         outputBox.setText(String.valueOf(output));
     }
-    public void exp(View v){
+    public void exp(){
         EditText num1ET = findViewById(R.id.editTextNumberInputBox);
         String strNum1 = num1ET.getText().toString();
-        int num1= Integer.valueOf(strNum1);
+        double num1= Double.valueOf(strNum1);
 
         EditText num2ET = findViewById(R.id.editTextNumberInputBox2);
         String strNum2 = num2ET.getText().toString();
-        int num2 = Integer.valueOf(strNum2);
+        double num2 = Double.valueOf(strNum2);
         TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
 
-        int output = num1^num2;
+        double output = Math.pow(num1, num2);
 
         outputBox.setText(String.valueOf(output));
     }
-    public void root(View v){
+    public void root(){
         EditText num1ET = findViewById(R.id.editTextNumberInputBox);
         String strNum1 = num1ET.getText().toString();
-        int num1= Integer.valueOf(strNum1);
+        double num1= Double.valueOf(strNum1);
+
+        TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
+
+        double output = (double) Math.sqrt(num1);
+
+        outputBox.setText(String.valueOf(output));
+    }
+    public void cubeRoot(){
+        EditText num1ET = findViewById(R.id.editTextNumberInputBox);
+        String strNum1 = num1ET.getText().toString();
+        double num1= Double.valueOf(strNum1);
+
+        TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
+
+        double output = Math.pow(num1, (1/3));
+
+        outputBox.setText(String.valueOf(output));
+    }
+    public void divide(){
+        EditText num1ET = findViewById(R.id.editTextNumberInputBox);
+        String strNum1 = num1ET.getText().toString();
+        double num1= Double.valueOf(strNum1);
 
         EditText num2ET = findViewById(R.id.editTextNumberInputBox2);
         String strNum2 = num2ET.getText().toString();
-        int num2 = Integer.valueOf(strNum2);
+        double num2 = Double.valueOf(strNum2);
         TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
 
-        int output = (int) Math.sqrt(num1);
+        double output = num1/num2;
 
         outputBox.setText(String.valueOf(output));
     }
-    public void cubeRoot(View v){
+    public void mod(){
         EditText num1ET = findViewById(R.id.editTextNumberInputBox);
         String strNum1 = num1ET.getText().toString();
-        int num1= Integer.valueOf(strNum1);
+        double num1= Double.valueOf(strNum1);
 
         EditText num2ET = findViewById(R.id.editTextNumberInputBox2);
         String strNum2 = num2ET.getText().toString();
-        int num2 = Integer.valueOf(strNum2);
+        double num2 = Double.valueOf(strNum2);
         TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
 
-        int output = num1^(1/3);
+        double output=num1%num2;
 
         outputBox.setText(String.valueOf(output));
     }
-    public void divide(View v){
+    public void factorial(){
         EditText num1ET = findViewById(R.id.editTextNumberInputBox);
         String strNum1 = num1ET.getText().toString();
-        int num1= Integer.valueOf(strNum1);
-
-        EditText num2ET = findViewById(R.id.editTextNumberInputBox2);
-        String strNum2 = num2ET.getText().toString();
-        int num2 = Integer.valueOf(strNum2);
-        TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
-
-        int output = num1/num2;
-
-        outputBox.setText(String.valueOf(output));
-    }
-    public void mod(View v){
-        EditText num1ET = findViewById(R.id.editTextNumberInputBox);
-        String strNum1 = num1ET.getText().toString();
-        int num1= Integer.valueOf(strNum1);
-
-        EditText num2ET = findViewById(R.id.editTextNumberInputBox2);
-        String strNum2 = num2ET.getText().toString();
-        int num2 = Integer.valueOf(strNum2);
-        TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
-
-        int output=num1%num2;
-
-        outputBox.setText(String.valueOf(output));
-    }
-    public void factorial(View v){
-        EditText num1ET = findViewById(R.id.editTextNumberInputBox);
-        String strNum1 = num1ET.getText().toString();
-        int num1= Integer.valueOf(strNum1);
+        double num1= Double.valueOf(strNum1);
 
         TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
 
@@ -169,6 +163,31 @@ public class MainActivity extends AppCompatActivity {
         if (operation.getText().equals("+")){
             add();
         }
+        if (operation.getText().equals("-")){
+            sub();
+        }
+        if (operation.getText().equals("x")){
+            mult();
+        }
+        if (operation.getText().equals("/")){
+            divide();
+        }
+        if (operation.getText().equals("^")){
+            exp();
+        }
+        if (operation.getText().equals("%")){
+            mod();
+        }
+        if (operation.getText().equals("∛")){
+            cubeRoot();
+        }
+        if (operation.getText().equals("√")){
+            root();
+        }
+        if (operation.getText().equals("!")){
+            factorial();
+        }
+
     }
     public void allCancel(View v){
         TextView text1 = findViewById(R.id.editTextNumberInputBox);
@@ -181,17 +200,4 @@ public class MainActivity extends AppCompatActivity {
         operator.setText("");
         findViewById(R.id.editTextNumberInputBox).requestFocus(1);
     }
-//    public void clear(){
-//        EditText num1ET = findViewById(R.id.editTextNumberInputBox);
-//        String strNum1 = num1ET.getText().toString();
-//        int num1= Integer.valueOf(strNum1);
-//
-//        EditText num2ET = findViewById(R.id.editTextNumberInputBox2);
-//        String strNum2 = num2ET.getText().toString();
-//        int num2 = Integer.valueOf(strNum2);
-//        TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
-//
-//        num1=0;
-//        num2=0;
-//    }
 }
