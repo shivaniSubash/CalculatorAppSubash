@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView outputBox = findViewById(R.id.textViewNumberOutputBox);
 
-        double output = Math.pow(num1, (1/3));
+        double output = Math.cbrt(num1);
 
         outputBox.setText(String.valueOf(output));
     }
