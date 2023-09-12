@@ -200,4 +200,25 @@ public class MainActivity extends AppCompatActivity {
         operator.setText("");
         findViewById(R.id.editTextNumberInputBox).requestFocus(1);
     }
+
+    public void backSpace(View v) {
+        EditText num1ET = findViewById(R.id.editTextNumberInputBox);
+        EditText num2ET = findViewById(R.id.editTextNumberInputBox2);
+
+        if (num1ET.isFocused()) {
+            String strNum1 = num1ET.getText().toString();
+            if (!strNum1.isEmpty()) {
+                strNum1 = strNum1.substring(0, strNum1.length() - 1);
+                num1ET.setText(strNum1);
+                num1ET.setSelection(strNum1.length()); // taken from stack overflow in order to move cursor to end of the numbers entered. https://stackoverflow.com/questions/26516378/java-calculator-how-to-make-backspace
+            }
+        } else if (num2ET.isFocused()) {
+            String strNum2 = num2ET.getText().toString();
+            if (!strNum2.isEmpty()) {
+                strNum2 = strNum2.substring(0, strNum2.length() - 1);
+                num2ET.setText(strNum2);
+                num2ET.setSelection(strNum2.length());
+            }
+        }
+    }
 }

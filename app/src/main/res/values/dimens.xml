@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="textView_padding">16dp</dimen>
-<!--    margin and font sizes needed-->
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="font_size">16sp</dimen>
 </resources>

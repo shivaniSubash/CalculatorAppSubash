@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_medium"
     android:background="@color/md_theme_light_errorContainer"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textViewOperation"
+        android:textSize="@dimen/font_size"
         android:layout_width="65dp"
         android:layout_height="50dp"
         android:background="@color/md_theme_light_inversePrimary"
@@ -23,6 +25,7 @@
 
     <EditText
         android:id="@+id/editTextNumberInputBox"
+        android:textSize="@dimen/font_size"
         android:layout_width="175dp"
         android:layout_height="50dp"
         android:background="@color/md_theme_light_inversePrimary"
@@ -40,6 +43,7 @@
 
     <EditText
         android:id="@+id/editTextNumberInputBox2"
+        android:textSize="@dimen/font_size"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:background="@color/md_theme_light_inversePrimary"
@@ -56,6 +60,7 @@
 
     <TextView
         android:id="@+id/textViewNumberOutputBox"
+        android:textSize="@dimen/font_size"
         android:layout_width="369dp"
         android:layout_height="54dp"
         android:background="@color/md_theme_light_inversePrimary"
@@ -72,6 +77,7 @@
 
     <Button
         android:id="@+id/buttonClear"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="40dp"
@@ -87,12 +93,13 @@
 
     <Button
         android:id="@+id/buttonMod"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="12dp"
-        android:text="%"
         android:onClick="operatorClick"
+        android:text="%"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.401"
@@ -102,12 +109,13 @@
 
     <Button
         android:id="@+id/buttonDivision"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="12dp"
-        android:text="/"
         android:onClick="operatorClick"
+        android:text="/"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.732"
@@ -117,11 +125,12 @@
 
     <Button
         android:id="@+id/buttonMult"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginBottom="12dp"
-        android:text="x"
         android:onClick="operatorClick"
+        android:text="x"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.948"
@@ -131,12 +140,13 @@
 
     <Button
         android:id="@+id/buttonExp"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="12dp"
-        android:text="^"
         android:onClick="operatorClick"
+        android:text="^"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.071"
@@ -146,11 +156,12 @@
 
     <Button
         android:id="@+id/buttonFactorial"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginBottom="12dp"
-        android:text="!"
         android:onClick="operatorClick"
+        android:text="!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.951"
@@ -160,12 +171,13 @@
 
     <Button
         android:id="@+id/buttonCubeRoot"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="12dp"
-        android:text="∛"
         android:onClick="operatorClick"
+        android:text="∛"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.736"
@@ -175,12 +187,13 @@
 
     <Button
         android:id="@+id/buttonRoot"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="12dp"
-        android:text="√"
         android:onClick="operatorClick"
+        android:text="√"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.41"
@@ -190,10 +203,11 @@
 
     <Button
         android:id="@+id/buttonNum4"
-        android:onClick="numberClick"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="40dp"
+        android:onClick="numberClick"
         android:text="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -204,9 +218,10 @@
 
     <Button
         android:id="@+id/buttonNum5"
-        android:onClick="numberClick"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
+        android:onClick="numberClick"
         android:text="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -217,9 +232,10 @@
 
     <Button
         android:id="@+id/buttonNum6"
-        android:onClick="numberClick"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
+        android:onClick="numberClick"
         android:text="6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -230,10 +246,11 @@
 
     <Button
         android:id="@+id/buttonAdd"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
-        android:text="+"
         android:onClick="operatorClick"
+        android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.942"
@@ -243,34 +260,25 @@
 
     <Button
         android:id="@+id/button0"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
+        android:onClick="numberClick"
         android:text="0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.354"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.968" />
-
-    <Button
-        android:id="@+id/buttonDec"
-        android:layout_width="64dp"
-        android:layout_height="61dp"
-        android:text="."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.654"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.968" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <Button
         android:id="@+id/buttonNum7"
-        android:onClick="numberClick"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="40dp"
+        android:onClick="numberClick"
         android:text="7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -281,10 +289,11 @@
 
     <Button
         android:id="@+id/buttonNum8"
-        android:onClick="numberClick"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="36dp"
+        android:onClick="numberClick"
         android:text="8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -295,10 +304,11 @@
 
     <Button
         android:id="@+id/buttonNum9"
-        android:onClick="numberClick"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="40dp"
+        android:onClick="numberClick"
         android:text="9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -309,10 +319,11 @@
 
     <Button
         android:id="@+id/buttonSubt"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
-        android:text="-"
         android:onClick="operatorClick"
+        android:text="-"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.942"
@@ -322,10 +333,11 @@
 
     <Button
         android:id="@+id/buttonNum3"
-        android:onClick="numberClick"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="40dp"
+        android:onClick="numberClick"
         android:text="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -336,10 +348,11 @@
 
     <Button
         android:id="@+id/buttonNum1"
-        android:onClick="numberClick"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="36dp"
+        android:onClick="numberClick"
         android:text="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -350,8 +363,10 @@
 
     <Button
         android:id="@+id/buttonBackSpace"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
+        android:onClick="backSpace"
         android:text="⌫"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -362,10 +377,11 @@
 
     <Button
         android:id="@+id/buttonNum2"
-        android:onClick="numberClick"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_marginEnd="40dp"
+        android:onClick="numberClick"
         android:text="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -376,15 +392,16 @@
 
     <Button
         android:id="@+id/buttonEqual"
-        android:onClick="equals"
+        android:textSize="@dimen/font_size"
         android:layout_width="64dp"
         android:layout_height="61dp"
+        android:onClick="equals"
         android:text="="
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintHorizontal_bias="0.951"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958" />
+        app:layout_constraintVertical_bias="0.976" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
